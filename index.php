@@ -38,3 +38,12 @@ require 'abstract_factory/Test.php';
 $testObj = new \abstract_factory\Test(new \abstrac_factory\factories\WoodenDoorFactory());
 
 $testObj->test();
+
+
+require 'builder/Burger.php';
+require 'builder/BurgerBuilder.php';
+require 'builder/Test.php';
+
+$testObj = new \builder\Test(new \builder\BurgerBuilder(21));
+
+var_dump($testObj->test());
