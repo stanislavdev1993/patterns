@@ -47,3 +47,11 @@ require 'builder/Test.php';
 $testObj = new \builder\Test(new \builder\BurgerBuilder(21));
 
 var_dump($testObj->test());
+
+
+require 'prototype/SheepPrototype.php';
+require 'prototype/Sheep.php';
+require 'prototype/Test.php';
+
+$testObj = new \prototype\Test(new \prototype\Sheep('Sheep 1', 'Simple sheep'));
+$testObj->test();
