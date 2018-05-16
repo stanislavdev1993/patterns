@@ -62,3 +62,14 @@ require 'singletone/Test.php';
 
 $testObj = new \singleton\Test();
 $testObj->test();
+
+require 'adapter/LionInterface.php';
+require 'adapter/AfricanLion.php';
+require 'adapter/AsianLion.php';
+require 'adapter/Hunter.php';
+require 'adapter/WildDog.php';
+require 'adapter/WildDogAdapter.php';
+require 'adapter/Test.php';
+
+$testObj = new \adapter\Test();
+$testObj->test();
