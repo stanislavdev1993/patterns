@@ -55,3 +55,10 @@ require 'prototype/Test.php';
 
 $testObj = new \prototype\Test(new \prototype\Sheep('Sheep 1', 'Simple sheep'));
 $testObj->test();
+
+
+require 'singletone/President.php';
+require 'singletone/Test.php';
+
+$testObj = new \singleton\Test();
+$testObj->test();
